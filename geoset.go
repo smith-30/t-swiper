@@ -8,11 +8,6 @@ import (
 	"github.com/disiqueira/tindergo"
 )
 
-var (
-	concurrent    = 10
-	semaphoreChan = make(chan struct{}, concurrent)
-)
-
 func main() {
 	token := flag.String("token", "", "Your Facebook Token.")
 
